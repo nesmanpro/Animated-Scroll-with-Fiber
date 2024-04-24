@@ -1,36 +1,64 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# NextJS React TypeScript infinite animated slider with React-Three-Fiber
 
-## Getting Started
+This infinite scroll animated slider is built using NextJS, React with TypeScript, and React-Three-Fiber. It showcases a 3D interactive slider section using React-Three-Fiber and React Scroll Controls.
 
-First, run the development server:
+[![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)]()
+[![Typescript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)]()
+[![ReactJS](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)]()
+[![Tailwind](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)]()
+[![NextJS](https://img.shields.io/badge/next%20js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white)]()
+[![ThreeJS](https://img.shields.io/badge/ThreeJs-black?style=for-the-badge&logo=three.js&logoColor=white)]()
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Description
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+The project aims to create an interactive portfolio website with a unique slider section. The slider section is a 3D environment where users can scroll horizontally through multiple slides, each containing images and text.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Interactive 3D Slider Section
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+The slider utilizes React-Three-Fiber to create a dynamic 3D environment. Users can scroll horizontally through different slides, each containing images and text. The images are displayed using the `DreiImage` component, which reacts to scroll events to provide a parallax effect. Text slides are also included to provide additional information or messages.
 
-## Learn More
+![Interactive 3D Slider Section Demo](./src/img/uiuxScroll.webp)
 
-To learn more about Next.js, take a look at the following resources:
+## Key Features
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Horizontal Scrolling Slides
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+- The slider section consists of multiple slides that can be scrolled horizontally.
+- Each slide contains images and/or text related to the portfolio or project being showcased.
+- Users can scroll through the slides using the horizontal scroll controls provided by React Scroll Controls.
 
-## Deploy on Vercel
+### Parallax Effect for Images
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- Images within the slides react to scroll events, providing a parallax effect.
+- The `DreiImage` component dynamically adjusts its position and grayscale based on the user's scrolling behavior, creating a visually engaging experience.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+### Text Slides
+
+- In addition to image slides, text slides are included to provide information or messages to the user.
+- Text slides are positioned within the 3D environment and scroll horizontally along with the image slides.
+
+## Usability
+
+The portfolio website offers an immersive and visually stunning experience for users to explore the showcased projects. The horizontal scrolling functionality allows users to navigate through the slides effortlessly, while the parallax effect adds depth and interactivity to the images. The inclusion of text slides provides context and enhances the storytelling aspect of the portfolio.
+
+## Dependencies
+
+The project utilizes the following dependencies:
+
+- **@react-three/drei**: Provides components and hooks for working with React-Three-Fiber.
+- **@react-three/fiber**: The core library for creating 3D scenes with React.
+- **react**: The core library for building user interfaces with React.
+- **react-dom**: Provides DOM-specific methods for React.
+- **three**: The library used for creating and displaying 3D content.
+- **typescript**: Adds static typing to JavaScript.
+
+## Usage
+
+To run the project locally, you can follow these steps:
+
+1. Clone the repository to your local machine.
+2. Navigate to the project directory.
+3. Install dependencies using `npm install` or `yarn install`.
+4. Start the development server using `npm run dev` or `yarn dev`.
+
+Feel free to customize and extend this project according to your portfolio needs!
