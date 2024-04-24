@@ -60,5 +60,3 @@ To run the project locally, you can follow these steps:
 2. Navigate to the project directory.
 3. Install dependencies using `npm install` or `yarn install`.
 4. Start the development server using `npm run dev` or `yarn dev`.
-
-Feel free to customize and extend this project according to your portfolio needs!
